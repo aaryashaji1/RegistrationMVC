@@ -1,0 +1,21 @@
+﻿@model RegistrationMVC.Models.Student
+@{
+    ViewBag.Title = "About";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm("Index2", "Student"))
+{
+    <label>Username</label>
+    <br>
+    @Html.TextBoxFor(m => m.Username)
+
+    <br />
+
+    <label>Password</label>
+    <br />
+    @Html.TextBoxFor(m => m.Password)
+    <br /><input type="submit" value="Submit"/>
+}
+

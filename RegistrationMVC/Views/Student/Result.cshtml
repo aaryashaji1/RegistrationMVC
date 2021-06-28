@@ -1,0 +1,63 @@
+﻿@model RegistrationMVC.Models.Student
+@{
+    ViewBag.Title = "Result";
+}
+
+
+<hr />
+<h2 style="text-align:center">Student Details </h2>
+@using (Html.BeginForm("Index2", "Student"))
+{
+    <table border="1" align="center" height="300" width="500">
+
+        <tr>
+            <td>Name</td>
+            <td>@Model.Name</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td> @Model.Address</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>@Model.Gender</td>
+        </tr>
+        <tr>
+            <td>Dob</td>
+            <td>@Model.Dob</td>
+        </tr>
+        <tr>
+            <td>Pincode</td>
+            <td>@Model.Pincode</td>
+        </tr>
+
+
+
+
+    </table>
+}
+    @*@using (Html.BeginForm("Index2", "Student"))
+        {
+            <label>Name</label>
+            <br>
+            @Html.TextBoxFor(m => m.Name)
+            <br />
+
+            <label>Address</label>
+            <br />
+            @Html.TextBoxFor(m => m.Address)
+            <br />
+            <label>Gender</label>
+            @Html.TextBoxFor(m => m.Gender)
+            <br />
+
+            <label>Dob</label>
+            <br />
+            @Html.TextBoxFor(m => m.Dob)
+            <br />
+
+            <label>Pincode</label>
+            <br />
+            @Html.TextBoxFor(m => m.Pincode)
+            <br />
+        }*@
